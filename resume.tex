@@ -1,5 +1,71 @@
-\documentclass{article}
-\usepackage{resumecls}
+\documentclass[11pt]{article}
+\usepackage[vmargin=0.5in,hmargin=1.5in]{geometry}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{soul}
+\usepackage{enumitem}
+
 \begin{document}
-\name{Gabriel Ewing}
+
+\newcommand{\ressection}[1]{\setul{2pt}{.4pt}\large{\textbf{\ul{#1}}\\[0.3\baselineskip]}}
+\newcommand{\eosec}[0]{~\\[0.6\baselineskip]}
+\pagenumbering{gobble}
+
+\begin{center}\Large{\textbf{Gabriel Ewing}}\\[0.5\baselineskip]
+    \large{gre5@case.edu}\\
+    \large{505-331-5334}
+\end{center}
+\begin{paracol}{2}
+    \begin{flushleft}
+    \noindent 4118 Sunningdale Ave NE\\
+    Albuquerque, NM, 87110
+\end{flushleft}
+    \switchcolumn
+    \noindent \begin{flushright}11414 Fairchild Ave, Apt. 3\\
+    Cleveland, OH, 44106\end{flushright}
+\end{paracol}
+\begin{adjustwidth}{-2.2cm}{-2.2cm}
+    \ressection{Education}
+    \textbf{Case Western Reserve University} \hfill Cleveland, OH\\
+    \emph{Master of Science Degree in Computing and Information Science} \hfill August 2015-Present\\
+    GPA: 3.5 \hfill Expected: December 2016
+    \\[2ex]
+    \emph{Bachelor of Science Degree in Computer Science} \hfill August 2011-December 2015\\
+    GPA: 3.61
+    \eosec
+    \ressection{Research}
+    I study the subfield of machine learning called reinforcement learning with Professor Soumya Ray. I focus on using policy gradient techniques to solve simulated control tasks. I run experiments on CentOS servers using Python, Java and the RL-Glue interface.
+    \eosec
+    \ressection{Technical Experience}
+    \textbf{Codonics, Inc.} \hfill Middleburg Heights, OH\\
+    \emph{Test Engineering Co-op} \hfill January 2014-August 2014
+    \begin{itemize}[nosep]
+        \item Wrote AutoIt and Bash test scripts for medical software and devices
+        \item Created FDA-compliant test procedures and typeset them in TeX
+        \item Executed systematized and ad hoc product testing
+    \end{itemize}
+    ~\\[0.01\baselineskip]
+    \textbf{Case Western Reserve University} \hfill Cleveland, OH\\
+    \emph{Teaching Assistant, EECS 233 (Data Structures)} \hfill January 2015-May 2015
+    \begin{itemize}[nosep]
+        \item Graded programming and handwritten assignments
+        \item Hosted office hours
+    \end{itemize}
+    ~\\[0.01\baselineskip]
+    \ressection{Technical Skills}
+    \emph{Primary Language}: Python, with NumPy and SciPy\\
+    \emph{Other Languages}: Java, Matlab, Scheme, C, MIPS, Bash, AutoIt, LaTeX\\
+    \emph{Tools}: GNU/Linux, OS X, Git, tmux
+    \eosec
+    \ressection{Coursework}
+    Discrete Math, Data Structures, Algorithms, Databases, Linear Algebra, Logic Design and Computer Organization, Networks, Software Engineering, Probability, Computer Architecture, Operating Systems, Programming Language Concepts, Artificial Intelligence, Machine Learning, Software Craftsmanship, Advanced Algorithms, Computer Security, Algorithmic Robotics
+    \eosec
+    \ressection{Activities}
+    \emph{Chess}: Chess Master (United States Chess Federation National Master)
+    \begin{itemize}[nosep]
+        \item World Open Championship, first place under 2200 \hfill July 2014
+        \item US Open Championship, first place under 2000 \hfill August 2013
+    \end{itemize}
+    \emph{Languages}: Conversational in Spanish, exposure to Latin
+\end{adjustwidth}
 \end{document}
